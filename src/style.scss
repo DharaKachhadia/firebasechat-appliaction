@@ -1,20 +1,20 @@
 @mixin mobile {
-  @media screen and (max-width:480px) {
+  @media screen and (max-width: 480px) {
     @content;
   }
 }
 @mixin tablet {
-  @media screen and (max-width:768px) {
+  @media screen and (max-width: 768px) {
     @content;
   }
 }
 @mixin laptop {
-  @media screen and (max-width:1200px) {
+  @media screen and (max-width: 1200px) {
     @content;
-  } 
+  }
 }
 
-$darkColor:#a7bcff; 
+$darkColor: #a7bcff;
 
 * {
   margin: 0;
@@ -42,7 +42,6 @@ $darkColor:#a7bcff;
       color: #5d5b8d;
       font-weight: bold;
       font-size: 24px;
-    
     }
 
     .title {
@@ -64,7 +63,7 @@ $darkColor:#a7bcff;
         border: none;
         border-bottom: 1px solid #a7bcff;
         width: 250px;
-        outline:none;
+        outline: none;
 
         &::placeholder {
           color: rgb(175, 175, 175);
@@ -84,7 +83,7 @@ $darkColor:#a7bcff;
         color: white;
         font-weight: bold;
         border: none;
-       cursor: pointer;
+        cursor: pointer;
       }
       img {
         width: 32px;
@@ -108,7 +107,7 @@ $darkColor:#a7bcff;
     height: 80%;
     display: flex;
     overflow: hidden;
-    @include tablet{
+    @include tablet {
       width: 90%;
     }
 
@@ -146,7 +145,7 @@ $darkColor:#a7bcff;
             border: none;
             cursor: pointer;
             padding: 7px;
-            @include tablet{
+            @include tablet {
               position: absolute;
               bottom: 10px;
             }
@@ -155,7 +154,7 @@ $darkColor:#a7bcff;
 
         .logo {
           font-weight: bold;
-          @include tablet{
+          @include tablet {
             display: none;
           }
         }
